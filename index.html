@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Archivos de Bootstrap v4.3.1-->
+    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.css">
+    <title>Formulario y Validaciones</title>
+</head>
+<body>
+<!--heading -->
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Validaciones con Javascript</span>
+</nav>
+<div class="container fluid">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <h2>Validación de formularios</h2>
+            <form id="form" action="#lugardeenvio.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="required">Sólo letras</label>
+                    <input type="text" class="form-control" name="letters"> 
+                </div>
+                <div class="form-group">
+                    <label>Sólo números</label>
+                    <input type="text" class="form-control" name="digits"> 
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                    <label>CURP</label>
+                    <input type="text" class="form-control" name="curp">
+                </div>
+                <div class="form-group">
+                    <label>RFC</label>
+                    <input type="text" class="form-control" name="rfc">
+                </div>
+                <div class="form-group">
+                    <label>Valida CURP y RFC</label>
+                    <input type="text" class="form-control" name="curprfc">
+                </div>
+                <div class="form-group">
+                    <label>URL</label>
+                    <input type="text" class="form-control" id="url" name="url">
+                </div>
+                <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="text" class="form-control" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label>Archivo</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" name="file" id="file">
+                            <label class="custom-file-label" for="file" data-browse="Elegir">Seleccionar archivo</label>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <div class="form-group">
+                        <label>Confirmar password</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+                </div>
+                <div class="form-group">
+                        <div class="col-sm-8 offset-sm-4">
+                            <div class="form-check">
+                                <input type="checkbox" id="agree" value="agree" class="form-check-input">
+                                <label class="" for="agree">He leído la <a href="https://jqueryvalidation.org/documentation/" target="_blank"><b>documentación de jquery.validate</b></a></label>
+                            </div>
+                        </div>
+                </div>
+                 <!--Google Captcha v2-->
+                 <div class="form-group">
+                    <div class="col-sm-8 offset-sm-4">
+                        <div type="checkbox" id="recaptcha" name="recaptcha" class="g-recaptcha" data-sitekey="6LdK-qMZAAAAAC0x-NRUuY6yswsNQhgeKo2OIdHa"></div>
+                    </div>
+                </div>
+                <!--Google Captcha v2-->
+                <div class="text-center">
+                        <button type="submit" class="btn btn-primary" value="enviar" id="enviar" disabled>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+        <nav class="navbar navbar-light bg-light mt-5">
+        <span class="navbar-brand mb-0 h1">Formulario de lado Front</span>
+      </nav>
+</footer>
+</html>
+
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/bootstrap/bootstrap.min.js"></script>
+<!--Validate con modificacion para CURP y RFC-->
+<script src="./lib/jquery.validate.js"></script>
+<!--Valida el formulario con reglas de clases-->
+<script src="./validador.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+  
