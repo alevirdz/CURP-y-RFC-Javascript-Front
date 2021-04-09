@@ -6,7 +6,7 @@ la libreria de Jquery Validate para las validaciones de lado del cliente (FRONT)
 
 La libreria de Jquery Validate se le añadio un script para agregar nuevas reglas de clase, para la realización de este script se investigo como se conformaba el CURP y RFC.
 
-<a href="https://alevirdz.github.io/CURP-y-RFC-Javascript-Front/" target=”_blank”>Ver ejemplo</a></br>
+<a href="https://alevirdz.github.io/CURP-y-RFC-Javascript-Front/" target="_blank">Ver ejemplo</a></br>
 Clase para validar CURP:
 ```
 curp: {
