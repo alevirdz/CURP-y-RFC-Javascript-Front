@@ -5,7 +5,7 @@ Para la validacion de formularios se esta utilizando
 la libreria de Jquery Validate para las validaciones de lado del cliente (FRONT).
 
 La libreria de Jquery Validate se le añadio un script para agregar nuevas reglas de clase, para la realización de este script se investigo como se conformaba el CURP y RFC.
-
+```
 Clase para validar CURP:
 
 curp: {
@@ -24,7 +24,7 @@ curprfc: {
     required: true,
     curprfc: true
 }
-
+```
 
 [CURP PARA PRUEBAS]
 TOUR970422HCMRKB05
